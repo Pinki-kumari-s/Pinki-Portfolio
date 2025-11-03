@@ -4,7 +4,7 @@ if (yEl) yEl.textContent = new Date().getFullYear();
 
 /* Typing animation - keep roles as they were (Frontend Developer, ML Enthusiast) */
 const typingEl = document.querySelector(".typing");
-const words = ["Frontend Developer", "ML Enthusiast"];
+const words = ["Full Stack Developer", "ML Enthusiast"];
 let w = 0, i = 0, deleting = false;
 
 function typeLoop() {
