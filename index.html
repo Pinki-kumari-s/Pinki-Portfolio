@@ -13,6 +13,13 @@
 </head>
 <body>
   <!-- HEADER -->
+   <!-- Netlify form detection -->
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <textarea name="message"></textarea>
+</form>
+
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="#home">Pinki's Portfolio</a>
@@ -263,9 +270,9 @@
           </div>
         </div>
 
-       <!-- ✅ CONTACT FORM (Fully functional for Netlify) -->
-<form name="contact" method="POST" data-netlify="true" class="contact-form" action="/thank-you">
-  <!-- Hidden field required for Netlify to detect the form -->
+      <!-- ✅ Fully functional Netlify form with redirect -->
+<form name="contact" method="POST" data-netlify="true" action="/thank-you" class="contact-form">
+  <!-- Hidden input for Netlify -->
   <input type="hidden" name="form-name" value="contact" />
 
   <input type="text" name="name" placeholder="Your Name" required />
