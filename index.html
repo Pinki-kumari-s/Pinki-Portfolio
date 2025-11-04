@@ -263,18 +263,18 @@
           </div>
         </div>
 
-        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+       <!-- ✅ CONTACT FORM (Fully functional for Netlify) -->
+<form name="contact" method="POST" data-netlify="true" class="contact-form" action="/thank-you">
+  <!-- Hidden field required for Netlify to detect the form -->
+  <input type="hidden" name="form-name" value="contact" />
+
   <input type="text" name="name" placeholder="Your Name" required />
   <input type="email" name="email" placeholder="Your Email" required />
   <input type="text" name="subject" placeholder="Subject" />
   <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
 
-  <!-- 👇 hidden input is required for Netlify to register the form -->
-  <input type="hidden" name="form-name" value="contact">
-
   <button type="submit" class="submit-btn">Send Message</button>
 </form>
-
 
       </div>
     </section>
